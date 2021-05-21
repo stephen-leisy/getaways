@@ -37,6 +37,15 @@ module.exports = Router()
       next(err);
     }
   })
+
+  .get('/', async (req, res, next) => {
+    try {
+      const users = await User.find({});
+      res.send(users);
+    } catch (err) {
+      next(err);
+    }
+  })
   .get('/logout', async (req, res, next) => {
     res.clearCookie('session');
     res

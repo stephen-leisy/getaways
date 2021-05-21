@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getPlaces } from '../services/placesApi';
 import PlaceList from '../components/places/PlaceList';
 import Spinner from '../components/utils/Spinner';
+import Header from '../components/header/Header';
 import Pagination from '../components/controls/Pagination';
 import { setIndex } from '../utils/utils';
 
@@ -31,6 +32,7 @@ const Getaways = () => {
     <Spinner />
   ) : (
     <>
+      <Header />
       <Pagination
         onClick={handleButtonChange}
         currentPage={currentPage}
