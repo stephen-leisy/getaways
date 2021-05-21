@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Place = ({
+  id,
   name,
   description,
   location,
