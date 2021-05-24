@@ -5,9 +5,8 @@ const PlaceListPlace = ({ id, name, location, pricePerNight, image }) => {
   return (
     <ul>
       <img src={image} height="300px" width="600px" />
-      <li>
-        <h1>{name}</h1>
-      </li>
+
+      <h1>{name}</h1>
 
       <li>{location}</li>
       <li>${pricePerNight} / night</li>

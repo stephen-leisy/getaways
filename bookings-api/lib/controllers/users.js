@@ -28,10 +28,11 @@ module.exports = Router()
         httpOnly: true,
         maxAge: ONE_DAY_IN_MS,
         // sameSite: 'Lax' | 'None' | 'Strict',
-        // secure: true
+        sameSite: 'None',
+        secure: true,
       });
 
-      res.send(user);
+      res.send({ user, token });
     } catch (err) {
       err.status = 401;
       next(err);

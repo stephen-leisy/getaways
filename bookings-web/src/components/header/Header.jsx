@@ -19,14 +19,18 @@ export default function Header() {
             style={{ boxShadow: 'none', border: 'none' }}
           />
         </NavLink>
-        <img
-          src="https://img.icons8.com/nolan/64/forgot-password.png"
-          style={{ boxShadow: 'none', border: 'none' }}
-        />
-        <img
-          src="https://img.icons8.com/nolan/64/exit.png"
-          style={{ boxShadow: 'none', border: 'none' }}
-        />
+        <NavLink to="/login" exact activeClassName="hidden">
+          <img
+            src="https://img.icons8.com/nolan/64/forgot-password.png"
+            style={{ boxShadow: 'none', border: 'none' }}
+          />
+        </NavLink>
+        <NavLink to="/logout" exact activeClassName="hidden">
+          <img
+            src="https://img.icons8.com/nolan/64/exit.png"
+            style={{ boxShadow: 'none', border: 'none' }}
+          />
+        </NavLink>
       </div>
     </header>
   );

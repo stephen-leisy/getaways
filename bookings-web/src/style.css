@@ -4,16 +4,19 @@
 a {
   text-decoration: none;
 }
+a:active {
+  transform: scale(0.9);
+}
 body {
   background-color: #fffaf1;
 }
 
 ul {
   list-style: none;
-  box-shadow: -0.0625rem -0.0625rem 0 #6bffff, 0.0625rem 0.0625rem 0 #ff819e;
-  border: solid 5px rgb(212, 52, 218);
+  /* box-shadow: -0.0625rem -0.0625rem 0 #6bffff, 0.0625rem 0.0625rem 0 #ff819e; */
+  /* border: solid 5px rgb(212, 52, 218);
   border-radius: 50%;
-  background-color: #6bffff;
+  background-color: #6bffff; */
   /* max-width: 1000px; */
 }
 
@@ -49,14 +52,16 @@ h1 {
   color: rgb(212, 52, 218);
   font-weight: bold;
   text-shadow: -0.0925rem -0.0925rem 0 #6bffff, 0.0925rem 0.0925rem 0 #ff819e;
+  padding: 0%;
 }
 
 h2 {
   font-family: 'Permanent Marker', cursive;
   color: rgb(212, 52, 218);
-  background-color: #6bffff;
+  -webkit-text-stroke: 0.25px black;
+  background-color: honeydew;
   font-weight: bold;
-  text-shadow: -0.0625rem -0.0625rem 0 #6bffff, 0.0625rem 0.0625rem 0 #ff819e;
+  text-shadow: -0.0925rem -0.0925rem 0 #6bffff, 0.0925rem 0.0925rem 0 #ff819e;
   border: solid 1px rgb(212, 52, 218);
   box-shadow: -0.0625rem -0.0625rem 0 #6bffff, 0.0625rem 0.0625rem 0 #ff819e;
   border-radius: 50%;
