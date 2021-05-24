@@ -14,7 +14,7 @@ li {
 }
 
 img {
-  max-width: 40vw;
+  max-width: 42vw;
   max-height: 30vw;
   border-radius: 15px;
   box-shadow: 1px 1px rgb(212, 52, 218);
@@ -26,7 +26,9 @@ main {
   justify-content: space-around;
   font-family: 'Playfair Display', serif;
   text-shadow: -0.0625rem -0.0625rem 0 #6bffff, 0.0625rem 0.0625rem 0 #ff819e;
-  /* max-width: 1000px; */
+  /* background-color: #ff819e; */
+
+  /* background: url('https://wallpaperaccess.com/full/344034.png'); */
 }
 header {
   display: flex;
