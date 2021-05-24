@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Place from './Place';
+import PlaceListPlace from './PlaceListPlace';
 import { Link } from 'react-router-dom';
 
 const PlaceList = ({ places }) => {
   return places.map((place) => (
     <Link key={place.id} to={`/${place.id}`}>
-      <Place key={place.id} {...place} />
+      <PlaceListPlace key={place.id} {...place} />
     </Link>
   ));
 };

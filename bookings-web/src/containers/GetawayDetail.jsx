@@ -8,7 +8,6 @@ const GetawayDetail = () => {
   const { id } = useParams();
   const [place, setPlace] = useState({});
   const [loading, setLoading] = useState(true);
-  console.log(place);
 
   useEffect(() => {
     getOnePlace(id)

@@ -3,7 +3,7 @@ import React from 'react';
 export default function SignUp({ onSubmit, onChange }) {
   return (
     <form onSubmit={onSubmit}>
-      <h2>Sign Up!</h2>
+      <h1>Sign Up!</h1>
       <input
         type="text"
         placeholder="User Name"

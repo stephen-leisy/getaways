@@ -10,7 +10,7 @@ const Getaways = () => {
   const [loading, setLoading] = useState(true);
   const [places, setPlaces] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [perPage, setPerPage] = useState(5);
+  const [perPage, setPerPage] = useState(10);
 
   useEffect(() => {
     getPlaces()
@@ -32,13 +32,15 @@ const Getaways = () => {
     <Spinner />
   ) : (
     <>
-      <Header />
       <Pagination
         onClick={handleButtonChange}
         currentPage={currentPage}
         lastPage={lastPage}
       />
-      <PlaceList places={paginatedPlaces} />
+
+      <main>
+        <PlaceList places={paginatedPlaces} />
+      </main>
     </>
   );
 };
