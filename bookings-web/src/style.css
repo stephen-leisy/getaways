@@ -4,18 +4,23 @@
 a {
   text-decoration: none;
 }
+body {
+  background-color: #fffaf1;
+}
 
 ul {
   list-style: none;
+  box-shadow: -0.0625rem -0.0625rem 0 #6bffff, 0.0625rem 0.0625rem 0 #ff819e;
+  border: solid 5px rgb(212, 52, 218);
+  border-radius: 50%;
+  background-color: #6bffff;
   /* max-width: 1000px; */
-}
-li {
-  /* max-width: 600px; */
 }
 
 img {
   max-width: 42vw;
   max-height: 30vw;
+  border: solid 2px rgb(212, 52, 218);
   border-radius: 15px;
   box-shadow: 1px 1px rgb(212, 52, 218);
 }
@@ -26,6 +31,7 @@ main {
   justify-content: space-around;
   font-family: 'Playfair Display', serif;
   text-shadow: -0.0625rem -0.0625rem 0 #6bffff, 0.0625rem 0.0625rem 0 #ff819e;
+  background-color: #f8f0e3;
   /* background-color: #ff819e; */
 
   /* background: url('https://wallpaperaccess.com/full/344034.png'); */
@@ -39,9 +45,10 @@ header {
 
 h1 {
   font-family: 'Permanent Marker', cursive;
+  -webkit-text-stroke: 0.25px black;
   color: rgb(212, 52, 218);
   font-weight: bold;
-  text-shadow: -0.0625rem -0.0625rem 0 #6bffff, 0.0625rem 0.0625rem 0 #ff819e;
+  text-shadow: -0.0925rem -0.0925rem 0 #6bffff, 0.0925rem 0.0925rem 0 #ff819e;
 }
 
 h2 {
@@ -66,14 +73,14 @@ button {
   border-radius: 0.25em;
   box-sizing: border-box;
   text-decoration: none;
+  background-color: honeydew;
   font-family: 'Permanent Marker', cursive;
   color: rgb(212, 52, 218);
-  /* -webkit-text-stroke: 1px black; */
+  -webkit-text-stroke: 1px black;
   text-shadow: -0.0625rem -0.0625rem 0 #6bffff, 0.0625rem 0.0625rem 0 #ff819e;
   font-weight: 300;
-  /* color: #000000; */
   text-align: center;
-  transition: all 0.5s;
+  transition: all 0.3s;
   box-shadow: -0.0625rem -0.0625rem 0 #6bffff, 0.0625rem 0.0625rem 0 #ff819e;
 }
 button:hover {
@@ -88,4 +95,9 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+time {
+  display: felx;
+  justify-content: center;
 }

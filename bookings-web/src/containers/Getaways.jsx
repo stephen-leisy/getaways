@@ -29,18 +29,19 @@ const Getaways = () => {
     }
   };
   return loading ? (
-    <Spinner />
+    <time>
+      <Spinner />
+    </time>
   ) : (
     <>
+      <main>
+        <PlaceList places={paginatedPlaces} />
+      </main>
       <Pagination
         onClick={handleButtonChange}
         currentPage={currentPage}
         lastPage={lastPage}
       />
-
-      <main>
-        <PlaceList places={paginatedPlaces} />
-      </main>
     </>
   );
 };
