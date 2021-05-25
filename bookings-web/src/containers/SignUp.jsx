@@ -29,8 +29,8 @@ export default function Header() {
   };
   console.log(res);
   return (
-    <header>
+    <section>
       <SignUp onSubmit={handleSubmit} onChange={handleChange} />
-    </header>
+    </section>
   );
 }

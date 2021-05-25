@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import LogIn from '../components/auth/LogIn';
 import { logInUser } from '../services/usersApi';
 
@@ -18,14 +18,15 @@ export default function LogInContainer({ history, handleToken }) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const user = await logInUser(email, password);
-    localStorage.setItem('TOKEN', user._id);
-    handleToken(user._id);
+    localStorage.setItem('TOKEN', user.token);
+    handleToken(user.token);
+    console.log('loin', user.token);
     history.push('/places');
   };
 
   return (
-    <div>
+    <section>
       <LogIn onSubmit={handleSubmit} onChange={handleChange} />
-    </div>
+    </section>
   );
 }

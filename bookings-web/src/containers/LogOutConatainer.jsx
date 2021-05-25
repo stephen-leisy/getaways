@@ -10,5 +10,9 @@ export default function LogOutConatainer({ history, handleToken }) {
     handleToken('');
     history.push('/');
   };
-  return <LogOut onClick={handleClick} />;
+  return (
+    <section>
+      <LogOut onClick={handleClick} />
+    </section>
+  );
 }

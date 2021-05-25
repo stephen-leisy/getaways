@@ -15,7 +15,13 @@ const GetawayDetail = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  return loading ? <Spinner /> : <Place {...place} />;
+  return loading ? (
+    <Spinner />
+  ) : (
+    <main>
+      <Place {...place} />
+    </main>
+  );
 };
 
 export default GetawayDetail;
