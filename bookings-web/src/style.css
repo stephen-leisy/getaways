@@ -13,6 +13,10 @@ body {
 
 ul {
   list-style: none;
+  margin-top: 10px;
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
   /* box-shadow: -0.0625rem -0.0625rem 0 #6bffff, 0.0625rem 0.0625rem 0 #ff819e; */
   /* border: solid 5px rgb(212, 52, 218);
   border-radius: 50%;
@@ -31,7 +35,7 @@ img {
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-family: 'Playfair Display', serif;
   text-shadow: -0.0625rem -0.0625rem 0 #6bffff, 0.0625rem 0.0625rem 0 #ff819e;
   background-color: #f8f0e3;

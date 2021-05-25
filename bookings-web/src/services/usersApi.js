@@ -21,7 +21,7 @@ export const logInUser = async (email, password) => {
     body: JSON.stringify({ email, password }),
   });
   const json = await user.json();
-  console.log(json.token);
+  console.log(json);
   return json;
 };
 

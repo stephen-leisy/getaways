@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import LogIn from '../components/auth/LogIn';
 import { logInUser } from '../services/usersApi';
 
-export default function LogInContainer() {
+export default function LogInContainer({ history, handleToken }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [token, setToken] = useState({});
@@ -17,20 +17,12 @@ export default function LogInContainer() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const { token } = await logInUser(email, password);
-    localStorage.setItem('TOKEN', token);
-    console.log(token);
+    const user = await logInUser(email, password);
+    localStorage.setItem('TOKEN', user._id);
+    handleToken(user._id);
+    history.push('/places');
   };
-  console.log(
-    // 'res',
-    // user,
-    'token',
-    token,
-    'email',
-    email,
-    'password',
-    password
-  );
+
   return (
     <div>
       <LogIn onSubmit={handleSubmit} onChange={handleChange} />
